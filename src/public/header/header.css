@@ -1,0 +1,61 @@
+.header.single {
+	position: relative;
+}
+.header .header-box {
+	position: relative;
+}
+.header .header-nav {
+	transition: all linear 0.3s;
+}
+.header .header-nav ul {
+	min-height: 50px;
+	line-height: 50px;
+}
+.header .header-nav ul li{
+	float: left;
+}
+.header .header-nav ul a {
+	color: white;
+}
+.header .header-nav ul a.current,.header .header-nav ul li:hover {
+	color:black;
+	cursor: pointer;
+}
+.header .header-logo.logo-in {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	height: 50px;
+	width: auto;
+	transition: all linear 0.3s;
+	overflow: hidden;
+}
+.header .header-logo.logo-out {
+	position: relative;;
+	height: 60px;
+	background-color: white;
+	text-align: center;
+	transition: all linear 0.3s;
+	overflow: hidden;
+}
+.header .header-logo img {
+	height: 100%;
+}
+
+.header.single .header-nav {
+	padding-left: 100px;
+}
+.header .header-nav ul li {
+	width: 150px;
+	text-align: center;
+}
+.header.single .header-logo.logo-out {
+	height: 0;
+}
+
+.header.couple .header-nav {
+	padding-left: 0;
+}
+.header.couple .header-logo.logo-in {
+	height: 0;
+}

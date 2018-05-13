@@ -1,0 +1,22 @@
+.footer {
+	background-color: rgb(65,65,65);
+	color:white;
+	text-align: center;
+	font-size: 15px;
+}
+.footer .footer-message {
+	padding: 20px 0; 
+}
+.footer .footer-copyright {
+	padding-bottom: 20px;
+}
+.footer .footer-message span{
+	display: inline-block;
+	width: 33.3%
+}
+.footer .footer-message span:first-child{
+	text-align: left;
+}
+.footer .footer-message span:last-child{
+	text-align: right;
+}

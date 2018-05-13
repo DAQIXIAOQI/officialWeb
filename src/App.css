@@ -1,0 +1,15 @@
+.bg-blue {
+  background-color: rgb(72,174,246);
+  color: white;
+}
+li {
+  list-style-type: none;
+}
+ul,li {
+	margin: 0;
+	padding: 0;
+}
+.min-box {
+  width: 1000px;
+  margin: 0 auto;
+}
