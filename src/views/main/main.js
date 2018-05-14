@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Service from './main-service/service';
+import Exs from './main-example/examples';
+import Pic from './main-pic/pic';
+import './main.css';
 
 class Main extends Component {
 	componentDidMount() {
@@ -6,7 +10,9 @@ class Main extends Component {
 	render() {
 		return (
 				<div>
-					this is main
+					<Service />
+					<Exs />
+					<Pic />
 				</div>
 			);
 	}

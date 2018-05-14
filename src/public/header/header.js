@@ -32,8 +32,7 @@ class Header extends Component {
 	}
 	render() {
 		let nav = this.state.headerNav.map((item,index)=>{
-			return <NavLink to={item.path} activeClassName = 'current' isActive = {this.currentTopic} ><li key={index} >{item.name}</li></NavLink>
-			//return <li key={index} >{item.name}</li>
+			return <NavLink key={index} to={item.path} activeClassName = 'current' isActive = {this.currentTopic} ><li key={index} >{item.name}</li></NavLink>
 		});
 		return (
 				<div className={`header ${this.state.single ? "single" : "couple"} bg-blue`}>

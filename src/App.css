@@ -12,4 +12,21 @@ ul,li {
 .min-box {
   width: 1000px;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.mheader {
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+}
+.mheader .mtitle {
+	font-size: 28px;
+	font-weight: bold;
+}
+.mheader .mtext {
+	color: #6c6c6c;
+	padding: 15px 0;
+	border-bottom: 1px solid #ddd;
 }
