@@ -50,6 +50,7 @@ class Header extends Component {
 		}
 	}
 	scrollInto(e){
+		
 		const id = e.currentTarget.getAttribute('skip') ;
 		if(id){
 			let ele = document.getElementById(id);
@@ -60,21 +61,18 @@ class Header extends Component {
 					num++;
 					if(ele){
 						clearInterval(timer);
-						ele.scrollIntoView({
-			    			behavior: "smooth",
-			   				block: "start",
-						});
+						window.scrollTo(0, Util.getOffset.top(ele)-110);
 					}
 					if(num > 15){
 						clearInterval(timer);
 					}
 				},100);
 				return
-			}  
-			ele.scrollIntoView({
-    			behavior: "smooth",
-   				block: "start",
-			});
+			}
+			window.scrollTo(0, Util.getOffset.top(ele)-110);
+		}
+		else{
+			 window.scrollTo(0, 0);
 		}
 	}
 	render() {

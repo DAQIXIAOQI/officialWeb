@@ -7,6 +7,7 @@ class Recruit extends Component {
 			nowJob : 0
 		};
 		this.getJob = this.getJob.bind(this);
+		this.toggleJob = this.toggleJob.bind(this);
 	}
 	componentWillMount() {
 		this.getJob();
@@ -28,8 +29,14 @@ class Recruit extends Component {
 			}]
 		});
 	}
-	toggleJob(){
-
+	toggleJob(e){
+		console.log(e);
+		const index =  e.currentTarget ? parseInt(e.currentTarget.getAttribute("index")) : -1;
+		if(index != -1 && index != this.state.nowJob){
+			this.setState({
+				nowJob: index
+			});
+		}
 	}
 	render() {
 		let job = new Array();
@@ -45,7 +52,7 @@ class Recruit extends Component {
 		return (
 				<div className="recruit-box">
 					<div className="recruit-header inside-header">
-						<span className="recruit-logo inside-logo">聘</span>（人才招聘/招聘咨询）
+						<span className="recruit-logo inside-logo iconfont icon-zhaopin"></span> <span className="inside-des">（人才招聘/招聘咨询）</span>
 					</div>
 					<div className="job-list">
 						<div className='job-list-str'>岗位名称:

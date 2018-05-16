@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './font/iconfont.css';
 import Header from './public/header/header';
 import Footer from './public/footer/footer';
 import Banner from './public/banner/banner';

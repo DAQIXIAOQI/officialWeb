@@ -6,7 +6,7 @@ class Banner extends Component {
 	}
 	render() {
 		return (
-				<div className = 'banner'>
+				<div className = 'banner' id='banner'>
 					<div className="banner-box">
 						<img src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526212624842&di=a4d451d8a7f1e37b93a3d5e0280f8586&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Ff11f3a292df5e0feb4cad66c5d6034a85fdf7288.jpg' alt='banner'>
 						</img>

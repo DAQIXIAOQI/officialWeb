@@ -22,7 +22,15 @@ let Util = {
 			elem['on' + type] = fn;
 
 		}
-	}
+	},
+	getOffset : {
+    top: function (obj) {
+        return obj.offsetTop + (obj.offsetParent ? this.top(obj.offsetParent) : 0)
+    },
+    left: function (obj) {
+        return obj.offsetLeft + (obj.offsetParent ? this.left(obj.offsetParent) : 0)
+    }
+}
 }
 
 export default Util;
