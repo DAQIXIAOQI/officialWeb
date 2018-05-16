@@ -98,7 +98,7 @@ class Exs extends Component {
 		});
 		data = this.toggleMain(this.state.nowType);
 		return (
-				<div className="main-example min-box">
+				<div className="main-example min-box" id='example'>
 					<div className="mheader">
 								<div className="mtitle">案例</div>
 								<div className="mtext">优质案例推荐</div>

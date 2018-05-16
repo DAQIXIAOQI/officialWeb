@@ -53,6 +53,12 @@
 	height: 0;
 }
 
+
+.header.couple {
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
 .header.couple .header-nav {
 	padding-left: 0;
 }

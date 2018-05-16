@@ -51,7 +51,7 @@ class Service extends Component {
 			</div>)
 		});
 		return (
-				<div className='main-service min-box'>
+				<div className='main-service min-box' id='service'>
 					<div className="mheader">
 							<div className="mtitle">服务</div>
 							<div className="mtext">我们能为您提供的</div>
