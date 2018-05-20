@@ -6,10 +6,15 @@ import Footer from './public/footer/footer';
 import Banner from './public/banner/banner';
 import Routes from './config/route';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history'
+
 
 class App extends Component {
   constructor(){
     super();
+  }
+  componentWillMount(){
+    console.log(window.location.pathname);
   }
   render() {
     return (
